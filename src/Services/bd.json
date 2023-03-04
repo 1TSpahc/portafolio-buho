@@ -1,0 +1,26 @@
+[
+    {
+        "id": "001",
+        "title": "Caso 1",
+        "info": "En este proyecto se pidio realizar un formulario y agregarle diferentes funcionalidades",
+        "image": "https://raw.githubusercontent.com/1TSpahc/Buho-caso-1/master/screenshot/2.png",
+        "link": "https://github.com/1TSpahc/Buho-caso-1",
+        "demo": "https://1tspahc.github.io/Buho-caso-1/"
+    },
+    {
+        "id": "002",
+        "title": "Caso 2",
+        "info": "En este pryectos se pidio realizar una seccion de precios de una`landing page`",
+        "image": "https://raw.githubusercontent.com/1TSpahc/Buho-caso-2/master/screenshot/1.png",
+        "link": "https://github.com/1TSpahc/Buho-caso-2",
+        "demo": "https://1tspahc.github.io/Buho-caso-2/"
+    },
+    {
+        "id": "003",
+        "title": "Caso 3",
+        "info": "En este proyecto se pidio realizar una landing page de Hosting en equipo",
+        "image": "https://images2.imgbox.com/f6/0b/usudD6V3_o.png",
+        "link": "https://github.com/1TSpahc/Buho-caso-1",
+        "demo": "https://1tspahc.github.io/Buho-caso-1/"
+    }
+]
