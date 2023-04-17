@@ -1,23 +1,24 @@
 
-import { useEffect, useContext } from 'react'
+import { useEffect, useContext, useState } from 'react'
 import { Context } from '../Context/ContextProvider'
+import { getData } from '../services'
 
 export function useData () {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
   const { data, setData } = useContext(Context)
 
-  const apiUrl = import.meta.env.VITE_REACT_API_URL
-  const apiKey = import.meta.env.VITE_REACT_API_KEY
-
   useEffect(() => {
-    const getData = async () => {
-      const response = await fetch(`${apiUrl}?apikey=${apiKey}`)
-      const data = await response.json()
-      setData(data)
-    }
+    setLoading(true)
     getData()
+      .then(data => setData(data))
+      .catch(err => setError(err))
+      .finally(() => setLoading(false))
   }, [])
 
   return {
-    data
+    data,
+    loading,
+    error
   }
 }
