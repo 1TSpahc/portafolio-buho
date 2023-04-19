@@ -6,15 +6,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #121212;
-    padding: 25px 20px 0 20px;
+    @apply bg-bg-100 dark:-bg--dark-bg-100 ;
+    padding: 25px 20px;
     max-width: 1700px;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body::-webkit-scrollbar-track {
+    @apply bg-bg-100 dark:-bg--dark-bg-100;
+    
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply -bg--dark-bg-100 dark:bg-bg-100;
+    
+
+}
+#modal::-webkit-scrollbar{
+    width: 0;
+}
+h1 {
     font-family: 'Poppins', sans-serif;
 }
