@@ -24,7 +24,7 @@ export function Modal ({ modal, setModal }) {
     <AnimatePresence>
         {
             findProject && (
-                <motion.div className=' fixed w-full h-screen bg-bg-modal dark:-bg--dark-bg-modal  top-0 left-0 overflow-y-scroll flex flex-col items-center justify-center cursor-pointer' id='modal' ref={elementRef} onClick={handleClick} initial={{ opacity: 0, translateY: 0 }} animate={{ opacity: 1, translateY: 0 }} exit={{ opacity: 0, translateY: 0 }} >
+                <motion.div className=' fixed w-full h-screen bg-bg-modal dark:-bg--dark-bg-modal  top-0 left-0 overflow-y-scroll flex flex-col items-center justify-center cursor-pointer' id='modal' ref={elementRef} onClick={handleClick} initial={{ opacity: 0, translateY: 0 }} animate={{ opacity: 1, translateY: 0 }} exit={{ opacity: 0, translateY: 0 }}>
                   <ModalInfo findProject={findProject}/>
                 </motion.div>
             )
